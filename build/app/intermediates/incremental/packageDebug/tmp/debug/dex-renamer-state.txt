@@ -1,0 +1,4 @@
+#Fri Dec 17 19:06:56 IST 2021
+base.0=D\:\\MOBILE-APP-TEST\\keva\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\MOBILE-APP-TEST\\keva\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "D:\\MOBILE-APP-TEST\\keva\\build\\flutter_webview_pro\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,100,148,190",
+                        "endColumns": "44,47,41,64",
+                        "endOffsets": "95,143,185,250"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kevadeals.keva"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission
+14-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:4:5-91
+15        android:name="android.permission.INTERNET"
+15-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:4:22-64
+16        android:required="true" />
+16-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:4:65-88
+17    <uses-permission
+17-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:5:5-103
+18        android:name="android.permission.ACCESS_NETWORK_STATE"
+18-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:5:22-76
+19        android:required="true" />
+19-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:5:77-100
+20    <uses-permission
+20-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:7:5-89
+21        android:name="android.permission.CAMERA"
+21-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:7:22-62
+22        android:required="true" />
+22-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:7:63-86
+23
+24    <uses-feature
+24-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:8:5-84
+25        android:name="android.hardware.camera"
+25-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:8:19-57
+26        android:required="true" />
+26-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:8:58-81
+27
+28    <uses-permission android:name="android.hardware.camera.autofocus" />
+28-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:9:5-73
+28-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:9:22-70
+29    <uses-permission
+29-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:11:5-105
+30        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+30-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:11:22-78
+31        android:required="true" />
+31-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:11:79-102
+32    <uses-permission
+32-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:12:5-104
+33        android:name="android.permission.READ_EXTERNAL_STORAGE"
+33-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:12:22-77
+34        android:required="true" />
+34-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:12:78-101
+35
+36    <uses-feature
+36-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:14:5-90
+37        android:name="android.hardware.location.gps"
+37-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:14:19-63
+38        android:required="true" />
+38-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:14:64-87
+39
+40    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+40-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:16:5-79
+40-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:16:22-76
+41    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+41-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:17:5-80
+41-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:17:22-77
+42    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+42-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:18:5-71
+42-->D:\MOBILE-APP-TEST\keva\android\app\src\main\AndroidManifest.xml:18:22-68
+43
+44    <application
+45        android:name="android.app.Application"
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.6.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\67ff0aaf930f65024e6c37d99bc9e852\core-1.6.0\AndroidManifest.xml:24:18-86
+47        android:debuggable="true"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="keva" >
+50        <activity
+51            android:name="com.kevadeals.keva.MainActivity"
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53            android:exported="true"
+54            android:hardwareAccelerated="true"
+55            android:launchMode="singleTop"
+56            android:theme="@style/LaunchTheme"
+57            android:windowSoftInputMode="adjustResize" >
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+66                android:name="io.flutter.embedding.android.NormalTheme"
+67                android:resource="@style/NormalTheme" />
+68
+69            <intent-filter>
+70                <action android:name="android.intent.action.MAIN" />
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+73            </intent-filter>
+74        </activity>
+75        <!--
+76             Don't delete the meta-data below.
+77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+78        -->
+79        <meta-data
+80            android:name="flutterEmbedding"
+81            android:value="2" />
+82
+83        <provider
+84            android:name="androidx.core.content.FileProvider"
+85            android:authorities="com.kevadeals.keva.provider"
+86            android:exported="false"
+87            android:grantUriPermissions="true" >
+88            <meta-data
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+90                android:resource="@xml/provider_paths" />
+91        </provider>
+92    </application>
+93
+94</manifest>

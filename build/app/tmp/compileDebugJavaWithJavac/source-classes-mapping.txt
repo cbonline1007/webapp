@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/kevadeals/keva/BuildConfig.java
+ com.kevadeals.keva.BuildConfig
+com/kevadeals/keva/MainActivity.java
+ com.kevadeals.keva.MainActivity
